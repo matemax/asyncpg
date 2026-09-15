@@ -748,7 +748,7 @@ class TestCopyTo(tb.ConnectedTestCase):
 
         finally:
             await self.con.execute('DROP TABLE copytab_nocache')
-    
+
     async def test_copy_records_to_table_no_binary_codec(self):
         await self.con.execute('''
             CREATE TABLE copytab(a uuid);
